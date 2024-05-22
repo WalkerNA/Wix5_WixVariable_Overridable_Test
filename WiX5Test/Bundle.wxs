@@ -1,0 +1,15 @@
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:bal="http://wixtoolset.org/schemas/v4/wxs/bal">
+  <Bundle Name="WiX5Test" Manufacturer="Agilent" Version="1.0.0.0" UpgradeCode="290603d9-ee8b-472f-8fbd-e8817911737c">
+
+    <WixVariable Id="TestWixVariable" Value="0"/>
+
+    <BootstrapperApplication>
+      <bal:WixStandardBootstrapperApplication LicenseUrl="https://www.example.com/license" Theme="hyperlinkLicense" />
+    </BootstrapperApplication>
+
+    <Chain>
+        <PackageGroupRef Id="TestGroup"/>
+    </Chain>
+
+  </Bundle>
+</Wix>

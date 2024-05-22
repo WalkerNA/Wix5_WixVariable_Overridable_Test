@@ -1,0 +1,11 @@
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Fragment>
+      <WixVariable Id="TestWixVariable" Value="1" Overridable="true"/>
+      <!-- Replace the 'SourceFile' with another valid *.exe file -->
+      <PackageGroup Id="TestGroup">
+          <ExePackage Id="TestPackage"
+                      Permanent="true"
+                      SourceFile="C:\Shared\Tools\Tools\agentransack_3341.exe"/>
+      </PackageGroup>
+  </Fragment>
+</Wix>
